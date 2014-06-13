@@ -1,85 +1,64 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
  <head>
-  <title> 吕管明的个人网站 - 首页</title>
+  <title>吕管明 - 首页</title>
   <style type="text/css">
   html{
 	background-color: #F8F8F8;
   }
   body{
 	border: solid #B6B0B0 1px;
-	border-radius: 20px;
-	padding: 26px;
-	margin: 16px;
+	border-radius: 15px;
+	padding: 25px;
+	margin: 8px;
 	color: #000000;
 	background-color: #FFFFFF;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family:Georgia, serif, sans-serif;
 	text-align: justify;
   }
   .context{
-	width: 100%;
-	height: 100%;
 	background: #333;
 	border-radius: 10px;
-	background-image: url('2000.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	background-attachment:fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-position: 50% 50%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-position:50% 50%; 
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-image:url(http://qn.image.lvgm.cn/index_bg.jpg);
+	-webkit-transition: All 2s ease;
+	-moz-transition: All 2s ease;
+	-o-transition: All 2s ease;
+	-ms-transition: All 2s ease;
+	transition: All 2s ease;
   }
 
 
-	#container{
-		padding:20px;
-		background-color:rgba(0,0,0,0.3);
-		border-radius: 20px;
-		color: #fefefe;
-
-		overflow: auto; 
-		position: absolute;
-
-		left: 50%;
-		top: 50%;
-		width:auto;
-		height:auto;
-		max-height: 40%;
-		min-width: 30%;
-
-		-webkit-transform: translate(-50%, -50%);
-		-moz-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		
-		transition: height 1s ease;
-		transition: top 1s ease;
-	}
-
-	#container{
+#container{
+	padding:20px;
 	background-color:rgba(0,0,0,0.3);
-	border-radius: 1.5em;
+	border-radius: 18px;
 	color: #fefefe;
-
 	overflow: auto; 
-    position: absolute;
-
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	width:auto;
 	height:auto;
-	max-height: 80%;
-	min-width:90%;
-
+	max-height: 70%;
+	min-width: 60%;
+	max-width: 40%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-    
-    transition: height 1s ease;
+	transition: height 1s ease;
 	transition: top 1s ease;
 }
 
@@ -93,9 +72,6 @@
 	color: #868686;
 	text-decoration: underline;
 }
-
-#page-alpha p:hover,
-
 
 #footer {
        border-top:1px solid #d3d3d3;
@@ -115,29 +91,32 @@
 }
 
 #footer-content a:hover{
-	padding: 0.25rem;
+	padding: 0.3rem;
 	border-radius: 0.5em;
 }
 
-
-#page-alpha p:hover a{
-	color: #222;
+.logion{
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
-#page-alpha p{
-	background-color: rgba(0,0,0,0.5);
-	padding: 0.25rem;
-	border-radius: 0.5em;
-	text-shadow:0 1px 1px #333;
-	margin-top: 1em;
-	line-height: 180%;
-	margin-left: 0.8em;
+#logion_text{
+	text-indent: 2em;
+	text-align: left;
+	line-height:150%;
+	font-size: 110%;
+	font-family: 'SimHei','Microsoft YaHei','STHeiti';
+	font-style: normal;
 }
 
+#logion_author{
+	text-align: right;
+	font-family: KaiTi_GB2312,BiauKai;
+	font-size: 110%;
+}
 #header{
 	border-bottom: 1px solid #d3d3d3;
 	display: relative;
-	padding-bottom: 1em;
 }
 
 #container h1{
@@ -171,18 +150,22 @@
 	margin: auto;
 }
 
-
 @media (min-width: 641px) and (max-width:770px){
 	#container{
-		min-width:70%;
+		min-width:80%;
 	}
 }
-
+@media (min-width: 400px) and (max-width:641px){
+	#container{
+		min-width:80%;
+	}
+}
 @media (min-width: 771px){
 	#container{
 		min-width:30%;
 	}
 }
+
 
 #up-arrow{
 	position: absolute;
@@ -195,6 +178,7 @@
 	border-radius: 100%;
     cursor: n-resize;
 }
+
 
 #container.folded{
 	padding-top: 0px;
@@ -222,14 +206,12 @@
                 <div id="content-inner">
                     <div id="alpha">
 						<div id="alpha-inner">
-							<div id="page-alpha" style="margin-bottom:2em;">
-								<p>»<a href="blog/">博客</a> / <a href="http://weibo.com/lguanming" target="_blank">微博</a></p>
-								<p>» <a href="about.html">About me</a></p>
-
+							<div class="logion">
+								<div id="logion_text">业精于勤，荒于嬉，行成于思，毁于随</div>
+								<div id="logion_author">——（中国）　韩愈</div>
 							</div>
 							<div id="up-arrow" style="cursor: n-resize; background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);">
 							</div>
-							<div id="page-beta"></div>
                         </div>
                     </div>
 				<div id="beta">
@@ -240,24 +222,30 @@
 		<div id="footer">
 			<div id="footer-inner">
 				<div id="footer-content">
-					<p><a href="http://lvgm.cn/contact.html">Contact</a> | lvgm.cn</p>
+					<p><a href="about">About</a> |<a href="blog">Bolg</a> |<a href="contact">Contact</a> | © lvgm.cn</p>
 				</div>
 			</div>
 		</div>
 	</div>
     </div>
   </div>
-
+<script src="http://qn.image.lvgm.cn/logion.js"></script>
 <script>
 var pub_img_current_image;
+var logion_count = arrayObj.length;
 function backgroundImage(){
-	var pub_img_path='http://www.ruanyifeng.com/images_pub/';
-	var pub_img_num = 311;
-	var pub_img_current_no=function(){return Math.floor(Math.random()*pub_img_num+1);};
-	var pub_img_url=function(){return pub_img_path+'pub_'+pub_img_current_no()+'.jpg';};
+	var pub_img_path='http://7.su.bdimg.com/skin/';
+	var pub_img_num = 149;
+	var pub_img_current_no=function(count){return Math.floor(Math.random()*count+1);};
+	var pub_img_url=function(){return pub_img_path+''+pub_img_current_no(pub_img_num)+'.jpg';};
 	if (pub_img_current_image === undefined ) pub_img_current_image = pub_img_url();
 	var context = document.getElementById('context');
 	context.style.backgroundImage='url('+(pub_img_current_image=pub_img_url())+')';
+
+	var logion = arrayObj[pub_img_current_no(logion_count)];
+	document.getElementById('logion_text').innerText = unescape(logion.context);
+	document.getElementById('logion_author').innerText = unescape("%u2014%u2014"+logion.author);
+	
 }
 //backgroundImage();
 
