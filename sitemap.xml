@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://lvguanming.github.io/blog/2014/06/07/first-article/</loc>
-        <lastmod>2014-06-07T08:10:14-07:00</lastmod>
+        <lastmod>2014-06-13T09:54:40-07:00</lastmod>
     </url>
     <url>
         <loc>http://lvguanming.github.io/robots.txt</loc>
@@ -15,5 +15,13 @@
     <url>
         <loc>http://lvguanming.github.io/blog/archives/</loc>
         <lastmod>2014-06-07T08:10:14-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lvguanming.github.io/about/</loc>
+        <lastmod>2014-06-13T08:44:42-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lvguanming.github.io/contact/</loc>
+        <lastmod>2014-06-13T08:44:34-07:00</lastmod>
     </url>
 </urlset>

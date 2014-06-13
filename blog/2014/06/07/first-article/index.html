@@ -23,7 +23,8 @@
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="吕管明的网络日志" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -59,6 +60,8 @@
   <li><a href="/">Home</a></li>
   <li><a href="/blog/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/about">About</a></li>
 
 </ul>
 
@@ -87,6 +90,9 @@
 
 
 <time datetime="2014-06-07T08:05:00-07:00" pubdate data-updated="true">Jun 7<span>th</span>, 2014</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://lvguanming.github.io">Comments</a>
         
       </p>
     
@@ -121,6 +127,12 @@
       
 
 
+      
+<div style="margin-top: 10px;border-bottom: 1px dashed #ccc;padding: 5px;display:block;font-style:italic;">
+原文出处：<br> 版权：欢迎自由转载，请保留署名！
+</div>
+
+
     </p>
     
       <div class="sharing">
@@ -137,12 +149,24 @@
   </footer>
 </article>
 
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
 </div>
 
 <aside class="sidebar">
   
-    <section>
-  <h1>Recent Posts</h1>
+    <section> 
+  <h1>文章分类</h1> 
+  <ul id="categories"> 
+     
+  </ul> 
+</section>
+<section>
+  <h1>最近文章</h1>
   <ul id="recent_posts">
     
       <li class="post">
@@ -169,6 +193,22 @@
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'lvgm';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://lvguanming.github.io/blog/2014/06/07/first-article/';
+        var disqus_url = 'http://lvguanming.github.io/blog/2014/06/07/first-article/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
