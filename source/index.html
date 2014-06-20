@@ -207,7 +207,7 @@
                     <div id="alpha">
 						<div id="alpha-inner">
 							<div class="logion">
-								<div id="logion_text">业精于勤，荒于嬉，行成于思，毁于随</div>
+								<div id="logion_text">业精于勤，荒于嬉，行成于思，毁于随。</div>
 								<div id="logion_author">——（中国）　韩愈</div>
 							</div>
 							<div id="up-arrow" style="cursor: n-resize; background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);">
@@ -242,9 +242,11 @@ function backgroundImage(){
 	var context = document.getElementById('context');
 	context.style.backgroundImage='url('+(pub_img_current_image=pub_img_url())+')';
 
+	try{
 	var logion = arrayObj[pub_img_current_no(logion_count)];
 	document.getElementById('logion_text').innerText = unescape(logion.context);
 	document.getElementById('logion_author').innerText = unescape("%u2014%u2014"+logion.author);
+	}catch(err){}
 	
 }
 //backgroundImage();

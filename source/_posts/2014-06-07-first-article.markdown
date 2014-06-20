@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "first article"
+title: "第一篇文章"
 date: 2014-06-07 08:05:00 -0700
 comments: true
 categories: 
